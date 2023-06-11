@@ -8,22 +8,24 @@
 
   <style>
   body {
-      background-image: url("../image/intro_b_im.jpg");
+      background-image: url("../image/yellow.jpg");
       background-size: 1600px;
       background-position: center;
       background-repeat: no-repeat;
       font-family: Arial, Helvetica, sans-serif;
   }
 
-  #div1 {
+  .div1 {
     display: inline-block;
+    padding: 150px;
     top: 1000px;
-    margin: 500px;
+    margin: 300px;
+    font-size: 30px;
+    font-family: arial;
   }
 
-  p#div1 {
-    font-family: arial;
-    font-size: 40px;
+  iframe.div1 {
+    width: 300px;
   }
          /* 박스모델에서 박스의 크기는 기본적으로 콘텐츠의 크기만 계산(box-sizing:content-box;)
          아래에서 넓이를 70%로 지정했는데 패딩의 크기가 20px이 있어 실제 크기는 70%를 초과하게 됨
@@ -43,32 +45,24 @@
 </head>
 <body>
   
-  <nav>
   <ul>
     <li><a href="https://chae1412.github.io/23webproject"><image class="icon" src="../image/home_icon.jpg" alt="home"></image></a></li>
     <li><a href="./html/introduce.html"><image class="icon" src="../image/intro_icon.jpg" alt="introduce"></image></a></li>
     <li><a href="./html/music.html"><image class="icon" src="../image/music_icon.jpg" alt="music"></image></a></li>
     <li><a href="./html/shopping.html"><image class="icon" src="../image/sh_icon.jpg" alt="shopping"></image></a></li>
   </ul>
-  </nav>
 
-  <article>
-  <div id="div1">
+  <div class="div1">
     <p>전채린</p>
     <hr>
     <p>2003.06.12</p>
     <hr>
     <p>서울시 강서구</p>
     <hr>
-  </article>
-
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.988357503841!2d126.84413057538467!3d37.53177172612156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9c3558dea463%3A0xc2cf566657138ff9!2z6rmM7LmY7IKw7Jet!5e0!3m2!1sko!2skr!4v1686499343115!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
- 
 
 
-  <div>
-    <p>안녕하세요.</p>
-    <p>반갑습니다.</p>
-  </div>
+
 </body>
 </html>
