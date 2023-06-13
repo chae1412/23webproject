@@ -3,51 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>introduce myself</title>
+  <title>Music</title>
   <link rel="stylesheet" href="../css/mystyle.css">
 
   <style>
   body {
-      background-image: url("../image/yellow.jpg");
+      background-image: url("../image/blue.jpg");
       background-size: 1600px;
       background-position: center;
       background-repeat: no-repeat;
       font-family: Arial, Helvetica, sans-serif;
   }
 
-  .div1 {
-    display: inline-block;
-    padding: 150px;
-    top: 1000px;
-    margin: 300px;
-    font-size: 30px;
-    font-family: arial;
-  }
 
-  image.div1 {
+  img {
+    display: inline-block;
+    width: 400px;
+    height: auto;
     margin: 50px;
   }
 
-  iframe.div1 {
-    width: 300px;
-  }
-
-  pre {
-    text-align: center;
-    font-family: "바탕글";
-    color: rgba(40,40,40, 1);
-    right: 50%;
-  }
+  article {
+  float: left;
+  padding: 20px;
+  box-sizing:border-box; 
          /* 박스모델에서 박스의 크기는 기본적으로 콘텐츠의 크기만 계산(box-sizing:content-box;)
          아래에서 넓이를 70%로 지정했는데 패딩의 크기가 20px이 있어 실제 크기는 70%를 초과하게 됨
          box-sizing을 border-box 로 지정하면 **박스 크기 = 콘텐츠 크기+padding크기+border크기의 합**
          패딩의 크기를 포함한 article 영역의 전체 넓이를 70%로 맞추기 위해 border-box로 지정함 */
-
-  </style>
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 600px; /* only for demonstration, should be removed */
+  }
+  aside {
+  float: left;
+  padding: 20px; 
+  width: 30%;
+  box-sizing: border-box; 
+  background-color: green;
+  height: 600px; /* only for demonstration, should be removed */
+  }
   </style>
 </head>
 <body>
-  
+    
   <ul>
     <li><a href="https://chae1412.github.io/23webproject"><image class="icon" src="../image/home_icon.jpg" alt="home"></image></a></li>
     <li><a href="./html/introduce.html"><image class="icon" src="../image/intro_icon.jpg" alt="introduce"></image></a></li>
@@ -55,24 +54,19 @@
     <li><a href="./html/shopping.html"><image class="icon" src="../image/sh_icon.jpg" alt="shopping"></image></a></li>
   </ul>
 
-  <div class="div1">
-    <image src="../image/pro.jpg" alt="프로필"></image>
-    <p>전채린</p>
-    <hr>
-    <p>2003.06.12</p>
-    <hr>
-    <p>서울시 강서구</p>
-    <hr>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.988357503841!2d126.84413057538467!3d37.53177172612156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9c3558dea463%3A0xc2cf566657138ff9!2z6rmM7LmY7IKw7Jet!5e0!3m2!1sko!2skr!4v1686499343115!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </div>
 
-  <footer>
-    <pre>
-      Hi welcome to my homepage!
-      Please take a good look!
-      It was hard to do the assignment &#128514;
-    </pre>
-  </footer>
+   <img id="image1" src="../image/music_1.jpg" alt="Virtual Insanity">
+   <a href="https://www.youtube.com/watch?v=4JkIs37a2JE">Virtual Insanity - Jamiroquai</a>
+
+   <img id="image2" src="../image/music_2.jpg" alt="Middle">
+   <a href="https://www.youtube.com/watch?v=mOKqNxN4jWM">Middle - DJ Snake</a>
+
+
+   <img id="image3" src="../image/music_3.jpg" alt="2 U">
+   <a href="https://www.youtube.com/watch?v=aw7_JJLTvoY">2 U - Pink Slip</a>
+
+   <img id="image4" src="../image/music_4.jpg" alt="Viva La Vida">
+   <a href="https://www.youtube.com/watch?v=m1XNTyJVojU">Viva La Vida - 하현상, 신예찬, 홍진호</a>
 
 </body>
 </html>
