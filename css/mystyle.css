@@ -1,5 +1,6 @@
 .icon {
    width: 90px;
+   padding: 0px;
  }
 
 ul {
@@ -10,7 +11,7 @@ ul {
      overflow: visible; 은 오버클로우되는 콘텐츠를 잘라내지 않고 
      영역 범위 밖까지 콘텐츠를 출력함
      overflow: hidden은 오버클로우되는 콘텐츠를 잘라냄. */
-  position: sticky;
+  position: fixed;
   top: 0px;
   /* position: sticky는 미리 정의한 위치에 도달하기 전에는 
                다른 요소와 함께 스크롤 됨
@@ -22,10 +23,9 @@ ul {
      ul요소는 상단 0px 위치에 고정되어 움직이지 않음.  */
 }
 
-li {
+li image{
   display: inline-block;
-  margin: 20px 5px 0px; 
-  padding: 10px;
+  margin: 10px 3px 30px;
   /* 가로방향으로 메뉴를 만들기 위해 두가지 방법 모두 사용 가능
      float: left;  => li항목을 float(부유)시키고 왼쪽부터 차례로 배치 
      display: inline-block; => 기본적으로 li는 display: block 요소임
