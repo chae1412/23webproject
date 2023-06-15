@@ -8,28 +8,30 @@
   <style>
   body {
     background-image: url("../image/pink.jpg");
-    background-size: 1600px;
+    background-size: 70vw;
     background-position: center;
     background-repeat: no-repeat;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  div {
-    text-align: center;
+    font-family: Verdana, Tahoma, sans-serif;
   }
 
   article {
+    margin: auto;
+    width: 70vw;
+    text-align: center;
+  }
+  
+  article > div {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 100vh;
   }
 
   div.gallery {
-    margin: 5px;
-    border: 1px solid #ccc;
+    margin: 30px;
+    border: 2px solid #bc9cc5;
     float: left;
-    width: 180px;
+    width: 250px;
   }
 
   div.gallery:hover {
@@ -37,13 +39,12 @@
   }
 
   div.gallery img {
-    width: 100%;
+    width: 250px;
     height: auto;
   }
 
   div.desc {
     padding: 15px;
-    text-align: center;
   }
 
   pre {
@@ -55,65 +56,67 @@
   </style>
 </head>
 <body>
-    
-  <ul>
-    <li><a href="https://chae1412.github.io/23webproject"><image class="icon" src="../image/home_icon.jpg" alt="home"></image></a></li>
-    <li><a href="./introduce.html"><image class="icon" src="../image/intro_icon.jpg" alt="introduce"></image></a></li>
-    <li><a href="./music.html"><image class="icon" src="../image/music_icon.jpg" alt="music"></image></a></li>
-    <li><a href="./shopping.html"><image class="icon" src="../image/sh_icon.jpg" alt="shopping"></image></a></li>
-  </ul>
-
-  <div id="h">
-    <h1>My favorite shopping mall list</h1>
-  </div>
+  <nav>
+    <ul>
+      <li><a href="https://chae1412.github.io/23webproject"><image class="icon" src="../image/home_icon.jpg" alt="home"></image></a></li>
+      <li><a href="./introduce.html"><image class="icon" src="../image/intro_icon.jpg" alt="introduce"></image></a></li>
+      <li><a href="./music.html"><image class="icon" src="../image/music_icon.jpg" alt="music"></image></a></li>
+      <li><a href="./shopping.html"><image class="icon" src="../image/sh_icon.jpg" alt="shopping"></image></a></li>
+    </ul>
+  </nav>
 
   <article>
-  <div class="gallery">
-    <a target="_blank" href="https://arcoiris.kr/index.html">
-      <img src="../image/sh_1.jpg" alt="Arcoiris" width="600" height="auto">
-    </a>
-    <div class="desc">Arcoiris</div>
-  </div>
-  
-  <div class="gallery">
-    <a target="_blank" href="https://pieby.net/">
-      <img src="../image/sh_2.jpg" alt="pieby" width="600" height="auto">
-    </a>
-    <div class="desc">pieby</div>
-  </div>
-  
-  <div class="gallery">
-    <a target="_blank" href="https://spao.com/">
-      <img src="../image/sh_3.jpg" alt="spao" width="600" height="auto">
-    </a>
-    <div class="desc">spao</div>
-  </div>
-  
-  <div class="gallery">
-    <a target="_blank" href="https://m.standoil.kr/index.html#enp_mbris">
-      <img src="../image/sh_4.jpg" alt="standoil" width="600" height="auto">
-    </a>
-    <div class="desc">standoil</div>
-  </div>
+    <div>
+      <h1>My favorite shopping mall list</h1>
+    </div>
 
-  <div class="gallery">
-    <a target="_blank" href="https://www.marhenj.co.kr/">
-      <img src="../image/sh_5.jpg" alt="Marhenj" width="600" height="auto">
-    </a>
-    <div class="desc">Marhenj</div>
-  </div>
+  <div>
+    <div class="gallery">
+      <a target="_blank" href="https://arcoiris.kr/index.html">
+        <img src="../image/sh_1.jpg" alt="Arcoiris">
+      </a>
+      <div style="padding: 15px;">Arcoiris</div>
+    </div>
+    
+    <div class="gallery">
+      <a target="_blank" href="https://pieby.net/">
+        <img src="../image/sh_2.jpg" alt="pieby">
+      </a>
+      <div style="padding: 15px;">pieby</div>
+    </div>
+    
+    <div class="gallery">
+      <a target="_blank" href="https://spao.com/">
+        <img src="../image/sh_3.jpg" alt="spao">
+      </a>
+      <div style="padding: 15px;">spao</div>
+    </div>
+    
+    <div class="gallery">
+      <a target="_blank" href="https://m.standoil.kr/index.html#enp_mbris">
+        <img src="../image/sh_4.jpg" alt="standoil">
+      </a>
+      <div style="padding: 15px;">standoil</div>
+    </div>
 
-  <div class="gallery">
-    <a target="_blank" href="https://store-kr.uniqlo.com/display/displayShop.lecs?storeNo=83&siteNo=50706&displayNo=NQ1A13A07&displayMallNo=NQ1&tracking=header_logo&stonType=P&storeNo=83&siteNo=50706">
-      <img src="../image/sh_6.jpg" alt="uniqlo" width="600" height="auto">
-    </a>
-    <div class="desc">uniqlo</div>
-  </div>
-  
-  </table>  
+    <div class="gallery">
+      <a target="_blank" href="https://www.marhenj.co.kr/">
+        <img src="../image/sh_5.jpg" alt="Marhenj">
+      </a>
+      <div style="padding: 15px;">Marhenj</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="https://store-kr.uniqlo.com/display/displayShop.lecs?storeNo=83&siteNo=50706&displayNo=NQ1A13A07&displayMallNo=NQ1&tracking=header_logo&stonType=P&storeNo=83&siteNo=50706">
+        <img src="../image/sh_6.jpg" alt="uniqlo">
+      </a>
+      <div style="padding: 15px;">Uniqlo</div>
+    </div>
+    
+    </div>  
   </article>
 
-  <footer>
+  <footer style="clear: left;">
     <pre>
       I love so much shopping!!
       Shopping is part of my life&#128525;
